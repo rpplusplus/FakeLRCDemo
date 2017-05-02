@@ -22,6 +22,7 @@ struct CONST {
     struct LRCVIEW {
         public static let TEXTFIELD_FONT_SIZE = CGFloat(50)
         public static let TEXTFILED_COLOR = NSColor.white
+        public static let TEXTFILED_BACKGROUND_COLOR = NSColor.clear
     }
     
     public static let LRC_HOT_KEY = kVK_F1 //Command + F1

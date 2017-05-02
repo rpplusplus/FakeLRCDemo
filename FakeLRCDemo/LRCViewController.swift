@@ -33,7 +33,13 @@ class LRCViewController: NSViewController {
         
         parseLRC()
         
-        let _textfield = NSTextField(labelWithString: lrcArr?[0] ?? "Hello World")
+        let _textfield = NSTextField()
+
+        _textfield.stringValue = (labelWithString: lrcArr?[0] ?? "Hello World")
+        _textfield.drawsBackground = false
+        _textfield.isEditable = false
+        _textfield.isBezeled = false;
+        _textfield.backgroundColor = CONST.LRCVIEW.TEXTFILED_BACKGROUND_COLOR
         
         _textfield.textColor = CONST.LRCVIEW.TEXTFILED_COLOR
         _textfield.font = NSFont.systemFont(ofSize: CONST.LRCVIEW.TEXTFIELD_FONT_SIZE)
