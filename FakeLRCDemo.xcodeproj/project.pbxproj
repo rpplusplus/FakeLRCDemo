@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046D47B51EB8184A006115E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47B41EB8184A006115E5 /* AppDelegate.swift */; };
-		046D47B71EB8184A006115E5 /* LRCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D47B61EB8184A006115E5 /* LRCViewController.swift */; };
-		046D47B91EB8184A006115E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046D47B81EB8184A006115E5 /* Assets.xcassets */; };
 		046D47C41EB82939006115E5 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D47C31EB82939006115E5 /* MASShortcut.framework */; };
 		046D47C51EB82939006115E5 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 046D47C31EB82939006115E5 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04A382471EB8350000915178 /* LRCWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382461EB8350000915178 /* LRCWindow.swift */; };
-		04A382491EB8368200915178 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382481EB8368200915178 /* main.swift */; };
-		04A3824B1EB87B0F00915178 /* lrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04A3824A1EB87B0F00915178 /* lrc.txt */; };
 		04A3824D1EB8814100915178 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3824C1EB8814100915178 /* SnapKit.framework */; };
 		04A3824E1EB8814100915178 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A3824C1EB8814100915178 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04A382501EB88CF300915178 /* CONST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3824F1EB88CF300915178 /* CONST.swift */; };
+		04A382571EB89B0800915178 /* LRCWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382511EB89B0800915178 /* LRCWindow.swift */; };
+		04A382581EB89B0800915178 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382521EB89B0800915178 /* main.swift */; };
+		04A382591EB89B0800915178 /* LRCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382531EB89B0800915178 /* LRCViewController.swift */; };
+		04A3825A1EB89B0800915178 /* CONST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382541EB89B0800915178 /* CONST.swift */; };
+		04A3825B1EB89B0800915178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A382551EB89B0800915178 /* AppDelegate.swift */; };
+		04A3825C1EB89B0800915178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A382561EB89B0800915178 /* Assets.xcassets */; };
+		04A3825F1EB89B2800915178 /* lrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04A3825D1EB89B2800915178 /* lrc.txt */; };
+		04A382601EB89B2800915178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A3825E1EB89B2800915178 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,16 +38,16 @@
 
 /* Begin PBXFileReference section */
 		046D47B11EB8184A006115E5 /* FakeLRCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeLRCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		046D47B41EB8184A006115E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		046D47B61EB8184A006115E5 /* LRCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRCViewController.swift; sourceTree = "<group>"; };
-		046D47B81EB8184A006115E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		046D47BD1EB8184A006115E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046D47C31EB82939006115E5 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = "<group>"; };
-		04A382461EB8350000915178 /* LRCWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCWindow.swift; sourceTree = "<group>"; };
-		04A382481EB8368200915178 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		04A3824A1EB87B0F00915178 /* lrc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrc.txt; sourceTree = "<group>"; };
 		04A3824C1EB8814100915178 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
-		04A3824F1EB88CF300915178 /* CONST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CONST.swift; sourceTree = "<group>"; };
+		04A382511EB89B0800915178 /* LRCWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LRCWindow.swift; path = FakeLRCDemo/LRCWindow.swift; sourceTree = SOURCE_ROOT; };
+		04A382521EB89B0800915178 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = FakeLRCDemo/main.swift; sourceTree = SOURCE_ROOT; };
+		04A382531EB89B0800915178 /* LRCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LRCViewController.swift; path = FakeLRCDemo/LRCViewController.swift; sourceTree = SOURCE_ROOT; };
+		04A382541EB89B0800915178 /* CONST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CONST.swift; path = FakeLRCDemo/CONST.swift; sourceTree = SOURCE_ROOT; };
+		04A382551EB89B0800915178 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FakeLRCDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		04A382561EB89B0800915178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FakeLRCDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		04A3825D1EB89B2800915178 /* lrc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lrc.txt; path = FakeLRCDemo/lrc.txt; sourceTree = SOURCE_ROOT; };
+		04A3825E1EB89B2800915178 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FakeLRCDemo/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,7 @@
 			children = (
 				04A3824C1EB8814100915178 /* SnapKit.framework */,
 				046D47C31EB82939006115E5 /* MASShortcut.framework */,
-				046D47B31EB8184A006115E5 /* KeynoteTest */,
+				046D47B31EB8184A006115E5 /* FakeLRCDemo */,
 				046D47B21EB8184A006115E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,18 +81,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		046D47B31EB8184A006115E5 /* KeynoteTest */ = {
+		046D47B31EB8184A006115E5 /* FakeLRCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				046D47B41EB8184A006115E5 /* AppDelegate.swift */,
-				046D47B61EB8184A006115E5 /* LRCViewController.swift */,
-				046D47B81EB8184A006115E5 /* Assets.xcassets */,
-				046D47BD1EB8184A006115E5 /* Info.plist */,
-				04A382461EB8350000915178 /* LRCWindow.swift */,
-				04A382481EB8368200915178 /* main.swift */,
-				04A3824A1EB87B0F00915178 /* lrc.txt */,
-				04A3824F1EB88CF300915178 /* CONST.swift */,
+				04A3825D1EB89B2800915178 /* lrc.txt */,
+				04A3825E1EB89B2800915178 /* Info.plist */,
+				04A382511EB89B0800915178 /* LRCWindow.swift */,
+				04A382521EB89B0800915178 /* main.swift */,
+				04A382531EB89B0800915178 /* LRCViewController.swift */,
+				04A382541EB89B0800915178 /* CONST.swift */,
+				04A382551EB89B0800915178 /* AppDelegate.swift */,
+				04A382561EB89B0800915178 /* Assets.xcassets */,
 			);
+			name = FakeLRCDemo;
 			path = KeynoteTest;
 			sourceTree = "<group>";
 		};
@@ -156,8 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A3824B1EB87B0F00915178 /* lrc.txt in Resources */,
-				046D47B91EB8184A006115E5 /* Assets.xcassets in Resources */,
+				04A3825F1EB89B2800915178 /* lrc.txt in Resources */,
+				04A3825C1EB89B0800915178 /* Assets.xcassets in Resources */,
+				04A382601EB89B2800915178 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,11 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A382501EB88CF300915178 /* CONST.swift in Sources */,
-				04A382471EB8350000915178 /* LRCWindow.swift in Sources */,
-				046D47B71EB8184A006115E5 /* LRCViewController.swift in Sources */,
-				04A382491EB8368200915178 /* main.swift in Sources */,
-				046D47B51EB8184A006115E5 /* AppDelegate.swift in Sources */,
+				04A382581EB89B0800915178 /* main.swift in Sources */,
+				04A382591EB89B0800915178 /* LRCViewController.swift in Sources */,
+				04A382571EB89B0800915178 /* LRCWindow.swift in Sources */,
+				04A3825A1EB89B0800915178 /* CONST.swift in Sources */,
+				04A3825B1EB89B0800915178 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +282,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = KeynoteTest/Info.plist;
+				INFOPLIST_FILE = FakeLRCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.txx.KeynoteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,7 +300,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = KeynoteTest/Info.plist;
+				INFOPLIST_FILE = FakeLRCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.txx.KeynoteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
