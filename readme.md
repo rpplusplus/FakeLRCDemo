@@ -3,7 +3,7 @@
 
 ```
 brew install carthage
-Carthage update
+Carthage bootstrap
 ```
 ### 使用方式
 
