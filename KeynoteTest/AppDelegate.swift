@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import MASShortcut
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -19,14 +18,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         window = LRCWindow()
         window?.makeKeyAndOrderFront(nil)
-        
-//        let shortcut = MASShortcut(keyCode: UInt(kVK_F1), modifierFlags: NSEventModifierFlags.command.rawValue)
-//        
-//        var a = 0
-//        MASShortcutMonitor.shared().register(shortcut) {
-//            a += 1
-//            print("hello" + String(a))
-//        }
     }
 
     
