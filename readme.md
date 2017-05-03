@@ -18,7 +18,6 @@ Carthage bootstrap
 ### TODO：
 - 多屏幕情况适配
 - 支持拖拽
-- 文字根据长度自动适配字号
 - hide 事件
 
 
