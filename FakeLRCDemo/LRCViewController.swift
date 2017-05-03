@@ -42,7 +42,6 @@ class LRCViewController: NSViewController {
         _textfield.backgroundColor = CONST.LRCVIEW.TEXTFILED_BACKGROUND_COLOR
         
         _textfield.textColor = CONST.LRCVIEW.TEXTFILED_COLOR
-        _textfield.font = NSFont.systemFont(ofSize: CONST.LRCVIEW.TEXTFIELD_FONT_SIZE)
         _textfield.alignment = .center
         self.view.addSubview(_textfield)
         
@@ -53,7 +52,8 @@ class LRCViewController: NSViewController {
         }
         
         textfield = _textfield //不想写 if let 😂
-        
+        self.updateFontSize()
+
         let shortcut = MASShortcut(
             keyCode: UInt(CONST.LRC_HOT_KEY),
             modifierFlags: NSEventModifierFlags.command.rawValue
@@ -64,13 +64,40 @@ class LRCViewController: NSViewController {
         }
     }
     
+    func updateFontSize() {
+        
+        if let textfield = textfield {
+            var fontSize = CONST.LRCVIEW.TEXTFIELD_FONT_SIZE;
+            let str = textfield.stringValue as NSString
+            
+            var width = NSApplication.shared().windows.first?.screen?.frame.size.width ?? 0
+            width = width - CONST.WINDOW.LEFT_OFFSET - CONST.WINDOW.RIGHT_OFFSET
+
+            while true {
+                let size = str.size(withAttributes: [NSFontAttributeName: NSFont.systemFont(ofSize: fontSize)])
+                
+                if size.width <= width {
+                    break
+                } else {
+                    fontSize -= 1
+                }
+                
+            }
+            
+            textfield.font = NSFont.systemFont(ofSize: fontSize)
+        }
+    }
+    
     func showNextLine() {
         arrCurrentPos += 1
         
+        if let textfield = textfield {
         if arrCurrentPos < (lrcArr?.count ?? 0) {
-            textfield?.stringValue = lrcArr?[arrCurrentPos] ?? ""
+            textfield.stringValue = lrcArr?[arrCurrentPos] ?? ""
+            self.updateFontSize()
         } else {
             //HIDE
+        }
         }
     }
 }
